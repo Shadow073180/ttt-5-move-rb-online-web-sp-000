@@ -14,7 +14,7 @@ end
 
 
 def input_to_index(user_input)
-  position = user_input.to_i - 1
+   user_input.to_i - 1
 end
 
 
@@ -23,5 +23,9 @@ def update_array_at_with(board, index, value)
 end
 
 def move(board, position, character = "X" )
-     board[index] = position
+     puts display_board
+     puts "What position would you like (0-9)?"
+     position = gets.strip
+      input_to_index()
+
 end
